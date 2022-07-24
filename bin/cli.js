@@ -3,7 +3,10 @@ const lib = require("../lib/index.js");
 
 function main() {
     const arguments = process.argv.slice(2);
-    console.log(lib);
+    const command = lib.commands[arguments[0]];
+
+    if (command == undefined) return;
+    command.init();
 }
 
 main();
