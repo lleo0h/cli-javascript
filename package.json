@@ -1,0 +1,10 @@
+{
+  "name": "cli-javascript",
+  "version": "1.0.0",
+  "description": "CLI JavaScript construído sem bibliotecas externas (NPM etc).",
+  "bin": {
+    "cjs": "bin/cli.js"
+  },
+  "author": "Leonardo Araujo",
+  "license": "MIT"
+}
