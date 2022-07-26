@@ -6,7 +6,8 @@ function main() {
     const command = lib.commands[arguments[0]];
 
     if (command == undefined) return;
-    command.init();
+    arguments.shift();
+    command.init(arguments);
 }
 
 main();
